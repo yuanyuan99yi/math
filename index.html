@@ -21,7 +21,7 @@
     <section class="hero">
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <span class="hero-tag">重點整理 × 觀念統整</span>
+        <span class="hero-tag">重點整理 × 觀念統整 × 學習導覽</span>
         <h1>建立你的數學重點整理網站</h1>
         <p>
           先從觀念整理開始，之後可再擴充例題、題型整理、考前複習、影片講解與下載專區。
@@ -33,12 +33,183 @@
       </div>
     </section>
 
+    <section class="home-fixed-section">
+      <div class="panel">
+        <div class="section-title">
+          <h2>108課綱課程差異整理</h2>
+          <p>先快速整理國中與高中在 108 課綱下的學習方向，讓學生與家長能更快掌握重點。</p>
+        </div>
+
+        <div class="curriculum-switch">
+          <button id="tabJuniorBtn" class="switch-btn active" onclick="showCurriculumTab('junior')">國中</button>
+          <button id="tabSeniorBtn" class="switch-btn" onclick="showCurriculumTab('senior')">高中</button>
+        </div>
+
+        <div id="curriculumJunior" class="curriculum-panel active">
+          <div class="curriculum-grid">
+            <div class="curriculum-card">
+              <div class="curriculum-badge">國中 108 課綱</div>
+              <h3>和過去相比，題目更重視理解</h3>
+              <ul>
+                <li>不只考計算，會更重視題意理解與觀念應用。</li>
+                <li>閱讀題型、圖表題型、生活情境題型比例提高。</li>
+                <li>學生需要能把觀念串起來，而不是只背單一公式。</li>
+                <li>跨單元整合題更常出現，解題時更需要條理。</li>
+              </ul>
+            </div>
+
+            <div class="curriculum-card">
+              <div class="curriculum-badge">國中學習提醒</div>
+              <h3>學習策略要更偏向整理與理解</h3>
+              <ul>
+                <li>每個單元都要先建立基本觀念，再練題型。</li>
+                <li>要養成畫圖、列式、整理條件的習慣。</li>
+                <li>面對長題目時，要先抓關鍵數據與條件。</li>
+                <li>平時就要練習看懂表格、文字與圖形轉換。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="curriculumSenior" class="curriculum-panel">
+          <div class="curriculum-grid">
+            <div class="curriculum-card">
+              <div class="curriculum-badge high">高中 108 課綱</div>
+              <h3>學測與分科準備方向更分流</h3>
+              <ul>
+                <li>學測更重視閱讀理解、基礎觀念、跨章節整合。</li>
+                <li>分科則更需要章節熟練度、計算穩定度與題型整理。</li>
+                <li>高一高二基礎若沒有打穩，後面整合題會很吃力。</li>
+                <li>圖形理解、函數觀念、資料判讀能力變得更重要。</li>
+              </ul>
+            </div>
+
+            <div class="curriculum-card">
+              <div class="curriculum-badge high">高中學習提醒</div>
+              <h3>不能只背公式，要會連結章節</h3>
+              <ul>
+                <li>函數、幾何、代數、機率統計常會互相結合。</li>
+                <li>要學會把每章重點整理成自己的筆記架構。</li>
+                <li>學測與分科可提早分方向規劃準備節奏。</li>
+                <li>需要練習從題目敘述中快速抓出核心觀念。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel score-panel">
+        <div class="section-title">
+          <h2>成績區間與五標整理</h2>
+          <p>先做成首頁快速參考區，後續你可以再換成正式年度數據或更完整表格。</p>
+        </div>
+
+        <div class="table-grid">
+          <div class="table-card equal-card">
+            <h3>精熟 / 基礎 / 待加強約需答對幾題</h3>
+            <div class="custom-table-wrap">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>等級</th>
+                    <th>約略答對題數</th>
+                    <th>說明</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>精熟</td>
+                    <td>18～22 題</td>
+                    <td>代表整體基礎穩定，觀念與計算都有一定掌握。</td>
+                  </tr>
+                  <tr>
+                    <td>基礎</td>
+                    <td>10～17 題</td>
+                    <td>具備基本概念，但整合題與細節題仍需加強。</td>
+                  </tr>
+                  <tr>
+                    <td>待加強</td>
+                    <td>0～9 題</td>
+                    <td>基礎觀念仍需重新整理，建議回到核心單元打底。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="table-card equal-card">
+            <h3>平均學測五標簡表對應原始分數</h3>
+            <div class="custom-table-wrap">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>五標</th>
+                    <th>約略原始分數</th>
+                    <th>說明</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>頂標</td>
+                    <td>前段高分區</td>
+                    <td>通常代表整體表現穩定，錯誤較少。</td>
+                  </tr>
+                  <tr>
+                    <td>前標</td>
+                    <td>中上區間</td>
+                    <td>基礎掌握不錯，但高難題穩定度還可提升。</td>
+                  </tr>
+                  <tr>
+                    <td>均標</td>
+                    <td>中間區間</td>
+                    <td>基本分可拿到，但整合題和細節題常失分。</td>
+                  </tr>
+                  <tr>
+                    <td>後標 / 底標</td>
+                    <td>中後區間</td>
+                    <td>建議回到章節重點整理，先補足基本題型。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel student-panel">
+        <div class="section-title">
+          <h2>學生快速看懂</h2>
+          <p>如果你不知道該怎麼開始準備，可以先從下面三個方向下手。</p>
+        </div>
+
+        <div class="student-grid">
+          <div class="student-card">
+            <div class="student-num">01</div>
+            <h3>先把觀念整理好</h3>
+            <p>不要急著刷大量題目，先確認自己每個章節的基本定義、公式與核心概念是否真的懂。</p>
+          </div>
+
+          <div class="student-card">
+            <div class="student-num">02</div>
+            <h3>再練基本題與常錯題</h3>
+            <p>先把最常考、最容易失分的題型整理清楚，累積穩定度比盲目追難題更重要。</p>
+          </div>
+
+          <div class="student-card">
+            <div class="student-num">03</div>
+            <h3>最後做整合與複習</h3>
+            <p>把跨章節題型、圖表題、閱讀題集中練習，才能慢慢適應現在的考試方向。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contentArea" class="content-area"></section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 數學重點整理區｜第一版網站架構</p>
+      <p>© 數學重點整理區｜網站第一版擴充首頁</p>
     </div>
   </footer>
 

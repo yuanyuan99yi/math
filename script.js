@@ -57,6 +57,27 @@ function goHome() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
+function showCurriculumTab(type) {
+  const juniorPanel = document.getElementById("curriculumJunior");
+  const seniorPanel = document.getElementById("curriculumSenior");
+  const juniorBtn = document.getElementById("tabJuniorBtn");
+  const seniorBtn = document.getElementById("tabSeniorBtn");
+
+  if (!juniorPanel || !seniorPanel || !juniorBtn || !seniorBtn) return;
+
+  if (type === "junior") {
+    juniorPanel.classList.add("active");
+    seniorPanel.classList.remove("active");
+    juniorBtn.classList.add("active");
+    seniorBtn.classList.remove("active");
+  } else {
+    seniorPanel.classList.add("active");
+    juniorPanel.classList.remove("active");
+    seniorBtn.classList.add("active");
+    juniorBtn.classList.remove("active");
+  }
+}
+
 function showJuniorPage() {
   showBackButton();
 

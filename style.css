@@ -156,12 +156,19 @@ body{
   transform:translateY(-2px);
 }
 
+.home-fixed-section{
+  margin-top:34px;
+  display:flex;
+  flex-direction:column;
+  gap:28px;
+}
+
 .content-area{
   margin-top:34px;
 }
 
 .panel{
-  background:rgba(255,255,255,0.82);
+  background:rgba(255,255,255,0.84);
   border:1px solid rgba(220,228,240,0.9);
   border-radius:30px;
   padding:34px;
@@ -184,6 +191,201 @@ body{
   font-size:17px;
   color:#5a6a80;
   line-height:1.8;
+}
+
+.curriculum-switch{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  margin-bottom:28px;
+  flex-wrap:wrap;
+}
+
+.switch-btn{
+  border:none;
+  padding:14px 26px;
+  border-radius:999px;
+  font-size:16px;
+  font-weight:800;
+  background:#edf4fc;
+  color:#35506f;
+  cursor:pointer;
+  transition:0.2s ease;
+}
+
+.switch-btn.active{
+  background:linear-gradient(135deg,#4aa8ff,#2d6bdb);
+  color:#fff;
+  box-shadow:0 10px 20px rgba(52,114,214,0.2);
+}
+
+.switch-btn:hover{
+  transform:translateY(-1px);
+}
+
+.curriculum-panel{
+  display:none;
+}
+
+.curriculum-panel.active{
+  display:block;
+}
+
+.curriculum-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:24px;
+}
+
+.curriculum-card{
+  background:linear-gradient(180deg,#ffffff 0%,#f7fbff 100%);
+  border:1px solid #dbe7f5;
+  border-radius:26px;
+  padding:28px;
+  box-shadow:0 12px 28px rgba(90,110,150,0.08);
+}
+
+.curriculum-badge{
+  display:inline-block;
+  padding:8px 14px;
+  border-radius:999px;
+  background:#dbeeff;
+  color:#2267a8;
+  font-size:14px;
+  font-weight:800;
+  margin-bottom:14px;
+}
+
+.curriculum-badge.high{
+  background:#ffe1ea;
+  color:#b14b72;
+}
+
+.curriculum-card h3{
+  margin:0 0 16px;
+  font-size:26px;
+  color:#1c2d44;
+}
+
+.curriculum-card ul{
+  margin:0;
+  padding-left:20px;
+}
+
+.curriculum-card li{
+  margin-bottom:12px;
+  font-size:16px;
+  line-height:1.9;
+  color:#53647b;
+}
+
+.score-panel{
+  background:linear-gradient(180deg,#fffdfd 0%,#f7fbff 100%);
+}
+
+.table-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:24px;
+  align-items:stretch;
+}
+
+.equal-card{
+  height:100%;
+}
+
+.table-card{
+  background:#ffffff;
+  border:1px solid #dfe8f4;
+  border-radius:26px;
+  padding:24px;
+  box-shadow:0 10px 24px rgba(80,100,140,0.06);
+  display:flex;
+  flex-direction:column;
+}
+
+.table-card h3{
+  margin:0 0 16px;
+  font-size:24px;
+  color:#1a2c43;
+}
+
+.custom-table-wrap{
+  flex:1;
+  display:flex;
+}
+
+.custom-table{
+  width:100%;
+  border-collapse:collapse;
+  overflow:hidden;
+  border-radius:18px;
+  table-layout:fixed;
+}
+
+.custom-table th{
+  background:#eef5fd;
+  color:#24405f;
+  font-size:15px;
+  font-weight:800;
+  padding:14px 12px;
+  border:1px solid #d8e3f2;
+  text-align:center;
+}
+
+.custom-table td{
+  background:#ffffff;
+  color:#526379;
+  font-size:15px;
+  line-height:1.8;
+  padding:14px 12px;
+  border:1px solid #e0e8f3;
+  vertical-align:top;
+}
+
+.student-panel{
+  background:linear-gradient(180deg,#ffffff 0%,#fefcff 100%);
+}
+
+.student-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:20px;
+}
+
+.student-card{
+  background:linear-gradient(180deg,#ffffff 0%,#f7fbff 100%);
+  border:1px solid #dce7f5;
+  border-radius:24px;
+  padding:24px;
+  box-shadow:0 10px 24px rgba(85,110,150,0.08);
+}
+
+.student-num{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#4aa8ff,#2d6bdb);
+  color:#fff;
+  font-weight:900;
+  font-size:16px;
+  margin-bottom:16px;
+}
+
+.student-card h3{
+  margin:0 0 12px;
+  font-size:22px;
+  color:#1b2d44;
+}
+
+.student-card p{
+  margin:0;
+  font-size:16px;
+  line-height:1.9;
+  color:#58687e;
 }
 
 .grid-buttons{
@@ -302,6 +504,9 @@ body{
     font-size:38px;
   }
 
+  .curriculum-grid,
+  .table-grid,
+  .student-grid,
   .split-layout{
     grid-template-columns:1fr;
   }
@@ -335,5 +540,11 @@ body{
   .card-btn{
     font-size:18px;
     padding:18px 14px;
+  }
+
+  .curriculum-card h3,
+  .table-card h3,
+  .student-card h3{
+    font-size:22px;
   }
 }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>數學重點整理區</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand" onclick="goHome()">
+        <div class="brand-title">數學重點整理區</div>
+        <div class="brand-subtitle">國中 / 高中數學觀念整理網站</div>
+      </div>
+      <button id="backBtn" class="back-btn hidden" onclick="goHome()">回主頁</button>
+    </div>
+  </header>
+
+  <main class="container site-main">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-tag">重點整理 × 觀念統整</span>
+        <h1>建立你的數學重點整理網站</h1>
+        <p>
+          先從觀念整理開始，之後可再擴充例題、題型整理、考前複習、影片講解與下載專區。
+        </p>
+        <div class="hero-actions">
+          <button class="main-btn" onclick="showJuniorPage()">國中數學</button>
+          <button class="main-btn alt" onclick="showSeniorPage()">高中數學</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contentArea" class="content-area"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 數學重點整理區｜第一版網站架構</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

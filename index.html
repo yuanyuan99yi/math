@@ -3,26 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>數學重點整理</title>
+  <title>數學重點整理區</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand" onclick="goHome()">
-        <div class="brand-title">數學重點整理</div>
-        <div class="brand-subtitle">國中 / 高中數學觀念整理</div>
+        <div class="brand-title">數學重點整理區</div>
+        <div class="brand-subtitle">國中 / 高中數學觀念整理網站</div>
       </div>
       <button id="backBtn" class="back-btn hidden" onclick="goHome()">回主頁</button>
     </div>
   </header>
 
   <main class="container site-main">
+    <!-- 主視覺 -->
     <section class="hero">
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <span class="hero-tag">重點整理 × 觀念統整 × 學習導覽</span>
-        <h1>數學重點整理網站</h1>
+        <h1>建立你的數學重點整理網站</h1>
         <p>
           先從觀念整理開始，之後可再擴充例題、題型整理、考前複習、影片講解與下載專區。
         </p>
@@ -33,7 +34,9 @@
       </div>
     </section>
 
-   <section id="homeFixedSection" class="home-fixed-section">
+    <!-- 點國中 / 高中 後，要隱藏的首頁固定內容 -->
+    <section id="homeFixedSection" class="home-fixed-section">
+      <!-- 課綱差異 -->
       <div class="panel">
         <div class="section-title">
           <h2>108課綱課程差異整理</h2>
@@ -60,7 +63,7 @@
 
             <div class="curriculum-card">
               <div class="curriculum-badge">國中學習提醒</div>
-              <h3>學習策略要更偏向整理與理解</h3>
+              <h3>學習策略更偏向整理與理解</h3>
               <ul>
                 <li>每個單元都要先建立基本觀念，再練題型。</li>
                 <li>要養成畫圖、列式、整理條件的習慣。</li>
@@ -78,7 +81,7 @@
               <h3>學測與分科準備方向更分流</h3>
               <ul>
                 <li>學測更重視閱讀理解、基礎觀念、跨章節整合。</li>
-                <li>分科則更需要章節熟練度、計算穩定度與題型整理。</li>
+                <li>分科更需要章節熟練度、計算穩定度與題型整理。</li>
                 <li>高一高二基礎若沒有打穩，後面整合題會很吃力。</li>
                 <li>圖形理解、函數觀念、資料判讀能力變得更重要。</li>
               </ul>
@@ -98,6 +101,7 @@
         </div>
       </div>
 
+      <!-- 表格 -->
       <div class="panel score-panel">
         <div class="section-title">
           <h2>成績區間與五標整理</h2>
@@ -108,7 +112,7 @@
           <div class="table-card equal-card">
             <h3>精熟 / 基礎 / 待加強約需答對幾題</h3>
             <div class="custom-table-wrap">
-              <table class="custom-table">
+              <table class="custom-table center-table">
                 <thead>
                   <tr>
                     <th>等級</th>
@@ -138,49 +142,50 @@
           </div>
 
           <div class="table-card equal-card">
-        <h3>平均學測五標簡表對應原始分數</h3>
-       <div class="custom-table-wrap">
-        <table class="custom-table">
-      <thead>
-        <tr>
-          <th>五標</th>
-          <th>常見級分</th>
-          <th>約略原始分數</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>頂標</td>
-          <td>13級分</td>
-          <td>約 52 分</td>
-        </tr>
-        <tr>
-          <td>前標</td>
-          <td>11級分</td>
-          <td>約 44 分</td>
-        </tr>
-        <tr>
-          <td>均標</td>
-          <td>8級分</td>
-          <td>約 32 分</td>
-        </tr>
-        <tr>
-          <td>後標</td>
-          <td>6級分</td>
-          <td>約 24 分</td>
-        </tr>
-        <tr>
-          <td>底標</td>
-          <td>4級分</td>
-          <td>約 16 分</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
+            <h3>平均學測五標簡表對應原始分數</h3>
+            <div class="custom-table-wrap">
+              <table class="custom-table center-table">
+                <thead>
+                  <tr>
+                    <th>五標</th>
+                    <th>常見級分</th>
+                    <th>約略原始分數</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>頂標</td>
+                    <td>13級分</td>
+                    <td>約 52 分</td>
+                  </tr>
+                  <tr>
+                    <td>前標</td>
+                    <td>11級分</td>
+                    <td>約 44 分</td>
+                  </tr>
+                  <tr>
+                    <td>均標</td>
+                    <td>8級分</td>
+                    <td>約 32 分</td>
+                  </tr>
+                  <tr>
+                    <td>後標</td>
+                    <td>6級分</td>
+                    <td>約 24 分</td>
+                  </tr>
+                  <tr>
+                    <td>底標</td>
+                    <td>4級分</td>
+                    <td>約 16 分</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!-- 學生快速看懂 -->
       <div class="panel student-panel">
         <div class="section-title">
           <h2>學生快速看懂</h2>
@@ -209,12 +214,13 @@
       </div>
     </section>
 
+    <!-- 點按鈕後，新的內容會直接顯示在這裡 -->
     <section id="contentArea" class="content-area"></section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 數學重點整理區｜網站第一版擴充首頁</p>
+      <p>© 數學重點整理區｜首頁新版</p>
     </div>
   </footer>
 

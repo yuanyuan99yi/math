@@ -1,5 +1,6 @@
 const contentArea = document.getElementById("contentArea");
 const backBtn = document.getElementById("backBtn");
+const homeFixedSection = document.getElementById("homeFixedSection");
 
 const juniorSemesters = [
   "國一上", "國一下", "國二上", "國二下", "國三上", "國三下"
@@ -51,8 +52,21 @@ function hideBackButton() {
   backBtn.classList.add("hidden");
 }
 
+function hideHomeFixedSection() {
+  if (homeFixedSection) {
+    homeFixedSection.classList.add("hidden");
+  }
+}
+
+function showHomeFixedSection() {
+  if (homeFixedSection) {
+    homeFixedSection.classList.remove("hidden");
+  }
+}
+
 function goHome() {
   hideBackButton();
+  showHomeFixedSection();
   contentArea.innerHTML = "";
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
@@ -80,6 +94,7 @@ function showCurriculumTab(type) {
 
 function showJuniorPage() {
   showBackButton();
+  hideHomeFixedSection();
 
   const buttons = juniorSemesters.map(semester => {
     return `<button class="card-btn" onclick="showJuniorSemester('${semester}')">${semester}</button>`;
@@ -100,6 +115,7 @@ function showJuniorPage() {
 
 function showJuniorSemester(semester) {
   showBackButton();
+  hideHomeFixedSection();
 
   const topics = (juniorTopics[semester] || []).map((topic, index) => {
     return `
@@ -142,6 +158,7 @@ function showJuniorSemester(semester) {
 
 function showSeniorPage() {
   showBackButton();
+  hideHomeFixedSection();
 
   contentArea.innerHTML = `
     <section class="panel">
@@ -160,6 +177,7 @@ function showSeniorPage() {
 
 function showTrackPage(track) {
   showBackButton();
+  hideHomeFixedSection();
 
   const chapters = track === "學測" ? gsatChapters : astChapters;
 
@@ -182,6 +200,7 @@ function showTrackPage(track) {
 
 function showChapterDetail(track, chapter) {
   showBackButton();
+  hideHomeFixedSection();
 
   const notes = (chapterNotes[chapter] || []).map((item, index) => {
     return `
